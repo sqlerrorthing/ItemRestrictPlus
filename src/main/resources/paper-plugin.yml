@@ -1,0 +1,4 @@
+name: ItemRestrictPlus
+version: '${project.version}'
+main: me.oneqxz.itemrestrictplus.ItemRestrictPlus
+api-version: '1.20'
