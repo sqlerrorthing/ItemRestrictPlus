@@ -1,0 +1,18 @@
+general:
+  world_blacklist: [] # enter the name of the world in which you want to disable the restriction
+
+  # enter the name of the restriction here
+  # all: brewing, armorWearing, creative, pickup, drop, ownership, usage, crafting, smelting, placement, wearing, world
+  restrictions:
+    - brewing
+    - armorWearing
+    - creative
+    - pickup
+    - drop
+    - ownership
+    - usage
+    - crafting
+    - smelting
+    - placement
+    - wearing
+    - world
