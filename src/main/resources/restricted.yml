@@ -1,0 +1,34 @@
+allExplosions:
+  # name of restriction group
+  name: "Restrict any items that could cause explosions" # can't be null
+
+  # under what conditions all items in the items section will be restricted
+  restriction:
+    - global:
+        - "[message] "
+        - "[sound] BLOCK_ANVIL_BREAK 1 1"
+
+    - placement:
+        - "[message] &cYou can't place this item!"
+        - "[message] "
+    - usage:
+        - "[message] &cYou can't use this item!"
+        - "[message] "
+    - drop:
+        - "[message] &cYou can't drop this item!"
+        - "[message] "
+    - creative:
+        - "[message] &cYou can't take that item out of creative!"
+        - "[message] "
+
+
+  # items of restrict (find this: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+  items:
+    - TNT
+    - TNT_MINECART
+    - END_CRYSTAL
+    - RESPAWN_ANCHOR
+    - WITHER_SPAWN_EGG
+    - WITHER_SKELETON_SKULL
+    - CREEPER_SPAWN_EGG
+    - LEGACY_FIREBALL

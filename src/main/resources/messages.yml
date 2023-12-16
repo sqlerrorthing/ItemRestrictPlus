@@ -1,4 +1,0 @@
-general:
-  noPermission: '&cYou do not have permission!'
-  reload: '&cConfig and RestrictedItems reload complete!'
-  help: '/<label> reload'
