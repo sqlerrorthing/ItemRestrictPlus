@@ -2,24 +2,17 @@ general:
   world_blacklist: [] # enter the name of the world in which you want to disable the restriction
 
   # enter the name of enabled the restriction here
-  # all: brewing, armorWearing, creative, pickup, drop, ownership, usage, crafting, smelting, placement, wearing, world
+  # all: creative, pickup, drop, usage, crafting, smelting, placement
   restrictions:
-    - brewing
-    - armorWearing
     - creative
     - pickup
     - drop
-    - ownership
     - usage
     - crafting
     - smelting
     - placement
-    - wearing
-    - world
-    - interact
 
 command:
-  noPermission: '&cYou do not have permission!'
   reload: '&cConfig and RestrictedItems reload complete!'
   help: '/<label> reload'
   unknownCommand: '&cUnknown command! for help do:&7 /<label>'

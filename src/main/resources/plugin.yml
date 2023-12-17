@@ -1,0 +1,28 @@
+name: ItemRestrictPlus
+version: '${project.version}'
+main: me.oneqxz.itemrestrictplus.ItemRestrictPlus
+api-version: '1.20'
+
+softdepend: [PlaceholderAPI]
+
+commands:
+  itemrestrictplus:
+    usage: /<command> reload|help
+    description: main command
+    aliases: [irp]
+    permission: me.oneqxz.itemrestrictplus.command
+
+permissions:
+  me.oneqxz.itemrestrictplus.*:
+    default: op
+    children:
+      me.oneqxz.itemrestrictplus.command: true
+      me.oneqxz.itemrestrictplus.bypass: true
+
+  me.oneqxz.itemrestrictplus.command:
+    default: op
+    description: can usage command
+
+  me.oneqxz.itemrestrictplus.bypass:
+    default: op
+    description: can bypass all blocked items

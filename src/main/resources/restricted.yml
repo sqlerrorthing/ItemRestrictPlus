@@ -3,23 +3,28 @@ allExplosions:
   name: "Restrict any items that could cause explosions" # can't be null
 
   # under what conditions all items in the items section will be restricted
+  # you can -
+  # [message] String - send message to player
+  # [sound] NAME volume pitch - send sound to a player
+  # [console] String - execute command as a console
+  # [player] String - execute command as a player
   restriction:
-    - global:
-        - "[message] "
-        - "[sound] BLOCK_ANVIL_BREAK 1 1"
+    global:
+      - "[message] "
+      - "[sound] BLOCK_ANVIL_BREAK 1 1"
 
-    - placement:
-        - "[message] &cYou can't place this item!"
-        - "[message] "
-    - usage:
-        - "[message] &cYou can't use this item!"
-        - "[message] "
-    - drop:
-        - "[message] &cYou can't drop this item!"
-        - "[message] "
-    - creative:
-        - "[message] &cYou can't take that item out of creative!"
-        - "[message] "
+    placement:
+      - "[message] &cYou can't place this item!"
+      - "[message] "
+    usage:
+      - "[message] &cYou can't use this item!"
+      - "[message] "
+    drop:
+      - "[message] &cYou can't drop this item!"
+      - "[message] "
+    creative:
+      - "[message] &cYou can't take that item out of creative!"
+      - "[message] "
 
 
   # items of restrict (find this: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
